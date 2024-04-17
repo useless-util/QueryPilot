@@ -62,6 +62,7 @@ public class QueryPilot {
 				try {
 					if (!sql.trim().isEmpty()) {
 						stmt.execute(sql);
+						System.out.println("Execute file: " + filePath + "Successfully");
 					}
 				} catch (Exception e) {
 					if (!ignoreError) {
